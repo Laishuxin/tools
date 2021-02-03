@@ -33,8 +33,8 @@ let g:python3_host_prog = '/usr/bin/python3'
 " =================================
 " key map
 let g:mapleader=" "
-inoremap ;q <esc>
-map ;q <esc>
+inoremap jj <esc>
+map jj <esc>
 " ---------------------------------
 " - move key map
 " ---------------------------------
