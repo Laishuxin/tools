@@ -1,4 +1,4 @@
-" ==================================
+" =================================
 " base setting
 " set background=dark
 " no highlight search
@@ -34,7 +34,6 @@ let g:python3_host_prog = '/usr/bin/python3'
 " key map
 let g:mapleader=" "
 inoremap jj <esc>
-map jj <esc>
 " ---------------------------------
 " - move key map
 " ---------------------------------
@@ -44,8 +43,8 @@ nnoremap J 5j
 nnoremap L 5l
 map S :w<CR>
 map Q :q<CR>
-map <leader><CR> :nohlsearch<CR>
-map <c-b> :CocCommand explorer<CR>
+map <leader>n :nohlsearch<CR>
+map <c-e> :CocCommand explorer<CR>
 nnoremap <silent> <C-f> :Files<CR>
 " ---------------------------------
 " - screen split key map
@@ -89,7 +88,7 @@ Plug 'luochen1990/rainbow'
 Plug 'NLKNguyen/papercolor-theme'
 Plug 'scrooloose/nerdtree'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'vim-airline/vim-airline'
+" Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'junegunn/fzf', {'do': { -> fzf#install() }}
 Plug 'junegunn/fzf.vim'
