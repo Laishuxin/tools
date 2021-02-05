@@ -1,0 +1,55 @@
+{
+	// Place your snippets for c here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	"//!<": {
+		"prefix": "//!<",
+		"body": [
+			"//!< "
+		],
+		"description": "//!<"
+	},
+	"function document": {
+		"prefix": "function documentation",
+		"body": [
+			"/**",
+			" * ${brief}",
+			" * @param  ${paraName}",
+			" *         ${paraDescription}",
+			" * @throws  ${Null}",
+			" *          ${throwsDescription}",
+			" * @return: ${returnDescription}",
+			" */",
+		],
+		"description": "c/c++ function info"
+	},
+	"class document": {
+		"prefix": "class documentation",
+		"body": [
+			"/**",
+			" * ${brief}",
+			" * @author  ${LaiShuXin}",
+			" * @version  1.0",
+			" */",
+		],
+		"description": "c/c++ class info"
+	},
+	"file document": {
+		"prefix": "file documentation",
+		"body": [
+			"/**",
+			"* <p>项目名称: ${project_name} </p>",
+			"* <p>文件名称: ${file_name} </p>",
+			"* <p>描述: [类型描述] </p>",
+			"* <p>创建时间: ${date} </p>",
+			"* <p>公司信息: ************公司 *********部</p>",
+			"* @author <a href=\"mail to: *******@******.com\" rel=\"nofollow\">作者</a>",
+			"* @version v1.0",
+			"* @update [序号][日期YYYY-MM-DD] [更改人姓名][变更描述]",
+			"*/",
+		],
+		"description": "c/c++ file info"
+	},
+}

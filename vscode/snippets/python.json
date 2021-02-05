@@ -1,0 +1,72 @@
+{
+	// Place your snippets for python here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	"python function commends": {
+		"prefix": "\"\"\"",
+		"body": [
+			"\"\"\"",
+			"Description",
+			"-----------",
+			"",
+			"",
+			"Parameters",
+			"----------",
+			"arg1 : type",
+			"",
+			"",
+			"Returns",
+			"-------",
+			"ret1 : type",
+			"",
+			"",
+			"\"\"\"",
+		],
+		"description": "python function commends"
+	},
+	"main file info": {
+		"prefix": "main file info",
+		"body": [
+			"#!/usr/bin/env python",
+			"# coding: utf-8",
+			"# File: .py",
+			"# Author: LaiShux",
+			"# Time : 2020/01/01 00:00",
+			"# Description: ",
+			"# Conventions: 为了方便起见，采用如下约定",
+			"#              1.变量名采用小驼峰命名法",
+			"#              2.函数名以下划线_为单词的分隔符",
+			"#              3.使用()取消逻辑判断优先级",
+			"# -------------------------------------------"
+		],
+		"description": "python main file info"
+	},
+	"file info": {
+		"prefix": "file info",
+		"body": [
+			"#!/usr/bin/env python",
+			"# coding: utf-8",
+			"# File: .py",
+			"# Author: LaiShux",
+		],
+		"description": "python file info"
+	},
+	
+	"-": {
+		"prefix": "# -",
+		"body": "# ---------------------------------------------------",
+		"description": "# -------"
+	},
+	"star": {
+		"prefix": "# *",
+		"body": "# ****************************************************",
+		"description": "comment star"
+	},
+	"equit": {
+		"prefix": "# =",
+		"body": "# =====================================================",
+		"description": "comment equit"
+	}
+}

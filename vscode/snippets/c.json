@@ -1,0 +1,123 @@
+{
+	// Place your snippets for c here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	"function document": {
+		"prefix": "function documentation",
+		"body": [
+			"/**", 
+			"* @brief		", 
+			"* @param  		",
+			"* @return 		",
+			"**/",
+		],
+		"description": "c/c++ function info"
+	},
+	"class document": {
+		"prefix": "class documentation",
+		"body": [
+			"/**", 
+			"* @brief		",
+			"* @details		",
+			"*/",
+		],
+		"description": "c/c++ class document"
+	},
+	"file info": {
+		"prefix": "file info",
+		"body": [
+			"/*******************************************************************************",
+			" * @brief    	",
+			" * @file     	.cpp",
+			" * @author   	LaiShux",
+			" * @version  	0.0.1",
+			" * @date     	2020-01-01",
+			"******************************************************************************/",
+		],
+		"description": "c/c++ file info"
+	},
+	"main file info": {
+		"prefix": "main file info",
+		"body": [
+			"// File: .cpp",
+			"// Author: LaiShux",
+			"// Time : 2020/01/01 00:00",
+			"// Description: ",
+			"// Conventions: 为了方便起见，采用如下约定",
+			"//              1.变量名采用小驼峰命名法",
+			"//              2.函数名以下划线_为单词的分隔符",
+			"//              3.使用()取消逻辑判断优先级",
+			"// ------------------------------------------",
+		],
+		"description": "c main file info"
+	},
+	"linux pthread include": {
+		"prefix": "pthread include",
+		"body": [
+			"#include<stdio.h>",
+			"#include<stdlib.h>",
+			"#include<unistd.h>",
+			"#include<pthread.h>",
+			"#include<string.h>",
+		],
+		"description": "pthread include"
+	},
+	"malloc": {
+		"prefix": "malloc and free",
+		"body": [
+			"// TODO: free",
+			"type *name = (type *)malloc(sizeof());",
+			"if (name == NULL) {",
+			"    perror(\"malloc fail \");",
+			"    exit(1);",
+			"}",
+		],
+		"description": "pthread include"
+	},
+	"//!<": {
+		"prefix": "//!<",
+		"body": [
+			"//!< "
+		],
+		"description": "//!<"
+	},
+	"linux pthread include": {
+		"prefix": "pthread include",
+		"body": [
+			"#include<stdio.h>",
+			"#include<stdlib.h>",
+			"#include<unistd.h>",
+			"#include<pthread.h>",
+			"#include<string.h>",
+		],
+		"description": "pthread include"
+	},
+	"malloc": {
+		"prefix": "malloc and free",
+		"body": [
+			"// TODO: free",
+			"type *name = (type *)malloc(sizeof());",
+			"if (name == NULL) {",
+			"    perror(\"malloc fail \");",
+			"    exit(1);",
+			"}",
+		],
+		"description": "pthread include"
+	},
+	// "-": {
+	// 	"prefix": "// -",
+	// 	"body": "// ----------------------------------------------",
+	// 	"description": "// -------"
+	// },
+	// "star": {
+	// 	"prefix": "// *",
+	// 	"body": "// ********************************************",
+	// 	"description": "comment star"
+	// }, "TODO":{
+	// 	"prefix": "TODO",
+	// 	"body": "// TODO(Laisx, 2020/01/01): ",
+	// 	"description": "TODO"
+	// }
+}
