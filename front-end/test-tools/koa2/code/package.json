@@ -5,8 +5,19 @@
   "license": "MIT",
   "dependencies": {
     "@koa/router": "^10.0.0",
+    "app-root-path": "^3.0.0",
     "koa": "^2.13.1",
     "koa-bodyparser": "^4.3.0",
+    "lodash": "^4.17.20",
     "mockjs": "^1.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.28",
+    "cross-env": "^7.0.3",
+    "typescript": "^4.1.5"
+  },
+  "scripts": {
+    "serve": "node ./src/index.js",
+    "testmock": "cross-env NODE_ENV=test MOCK_DEBUG=true node ./src/mock/dist/index.js"
   }
 }

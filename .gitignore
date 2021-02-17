@@ -28,3 +28,4 @@ front-end/package-tools/webpack/code/*/dist
 front-end/package-tools/webpack/code/*/package-lock.json
 front-end/package-tools/webpack/.vscode
 /package-tools/webpack/code/0_concept/yarn.lock
+front-end/test-tools/koa2/code/src/mock/dist/*
