@@ -16,6 +16,7 @@ pnpm-debug.log*
 # Editor directories and files
 .idea
 .vscode
+*/dist
 *.suo
 *.ntvs*
 *.njsproj
@@ -29,3 +30,4 @@ front-end/package-tools/webpack/code/*/package-lock.json
 front-end/package-tools/webpack/.vscode
 /package-tools/webpack/code/0_concept/yarn.lock
 front-end/test-tools/koa2/code/src/mock/dist/*
+front-end/test-tools/api/dist/*
