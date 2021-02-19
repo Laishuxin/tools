@@ -1,5 +1,5 @@
 import fs from 'fs'
-import logStrings from './logUtils'
+import {SPLIT_LINE_WARNING} from './logUtils'
 
 export function extractDirectory(_path: string): string[] {
   try {
@@ -14,9 +14,9 @@ export function extractDirectory(_path: string): string[] {
       .map((item) => item.name)
     return dirs
   } catch (err) {
-    console.warn(logStrings.SPLIT_LINE_WARNING)
+    console.warn(SPLIT_LINE_WARNING)
     console.warn(`extract directory error: ${err}`)
-    console.warn(logStrings.SPLIT_LINE_WARNING)
+    console.warn(SPLIT_LINE_WARNING)
   }
   return []
 }

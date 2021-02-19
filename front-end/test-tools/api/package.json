@@ -16,6 +16,7 @@
   "devDependencies": {
     "@types/koa": "^2.11.8",
     "@types/koa-router": "^7.4.1",
+    "@types/koa2-cors": "^2.0.1",
     "@types/lodash": "^4.14.168",
     "@types/mockjs": "^1.0.3",
     "@types/node": "^14.14.28",
@@ -28,6 +29,7 @@
     "app-root-path": "^3.0.0",
     "koa": "^2.11.8",
     "koa-router": "^10.0.0",
+    "koa2-cors": "^2.0.6",
     "lodash": "^4.17.20",
     "mockjs": "^1.1.0"
   }

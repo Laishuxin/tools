@@ -1,4 +1,5 @@
 import Koa from 'koa'
+import cors from 'koa2-cors'
 import router from './server/routes'
 import { SPLIT_LINE_LOG } from './utils/logUtils'
 
@@ -22,6 +23,8 @@ app.use((ctx, next) => {
   return next()
 })
 
+// allow cross origin
+app.use(cors())
 app.use(router.routes()).use(router.allowedMethods())
 
 app.listen(CONFIG.server.port)
