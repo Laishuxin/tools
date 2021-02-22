@@ -1,15 +1,57 @@
 {
+  "editor.lineNumbers": "relative",
+  // zen mode
+  "zenMode.hideLineNumbers": false,
+  "zenMode.hideStatusBar": false,
+  "zenMode.hideTabs": false,
+  // end zen mode,
+  // ======================= ui =========================
+  "editor.fontSize": 13,
+  "terminal.integrated.fontSize": 13,
+  // theme
+  "workbench.colorCustomizations": {
+    "editorWhitespace.foreground": "#ddddddb4",
+    "[Quiet Light]": {
+      // "editor.foreground": "#201515",
+      // "editor.selectionHighlightBorder": "#94767c00",
+      // "editor.selectionHighlightBackground": "#eeb6b678",
+      // "editorIndentGuide.activeBackground": "#81868d",
+      // "editorBracketMatch.background": "#f8ebfd5e",
+      // "editorBracketMatch.border": "#ff0000",
+      // "tab.activeBackground": "#ad9cd4b2",
+      // "textLink.foreground": "#d6561ac4",
+      // "descriptionForeground": "#ff0000",
+      // "selection.background": "#b98cd693",
+      // "textBlockQuote.background": "#b89a9a",
+      // "textSeparator.foreground": "#86c2df",
+      "statusBar.background": "#c4b7d7",
+      "statusBar.foreground": "#201515",
+    },
+  },
+  "editor.tokenColorCustomizations": {
+    "[Quiet Light]": {
+      "comments": "#a0a1a7",
+      // "strings": "#519657",
+      "functions": "#6e9bfc",
+      "keywords": "#a626a4",
+      "variables": "#e57373",
+      "types": "#a626a4",
+      // "numbers": "#e62020",
+    }
+  },
+  // end theme
+  // ======================= end ui =========================
   "vim.neovimPath": "E:\\Neovim\\bin\\nvim.exe",
   "vim.enableNeovim": true,
   "editor.renderWhitespace": "all",
-  "window.zoomLevel": 0,
+  "window.zoomLevel": 1,
   "python.dataScience.sendSelectionToInteractiveWindow": false,
   "python.pythonPath": "D:\\anaconda\\python.exe",
   //"python.terminal.activateEnvironment": false,
   // "workbench.iconTheme": "material-icon-theme",
   "extensions.ignoreRecommendations": true,
   "view-in-browser.customBrowser": "iexplore",
-  "files.autoSave": "off",
+  "files.autoSave": "afterDelay",
   "cssrem.rootFontSize": 40,
   "python.linting.flake8Enabled": true,
   "git.autofetch": true,
@@ -21,100 +63,12 @@
   "remote.SSH.showLoginTerminal": true,
   "vim.useCtrlKeys": false,
   "todo-tree.tree.showScanModeButton": false,
-  "cpplint.cpplintPath": "D:\\anaconda\\Scripts\\cpplint.exe",
-  "[matlab]": {
-    "files.encoding": "gb2312",
-  },
-  "latex-workshop.latex.recipes": [
-    {
-      "name": "xelatex",
-      "tools": [
-        "xelatex"
-      ]
-    },
-    {
-      "name": "latexmk",
-      "tools": [
-        "latexmk"
-      ]
-    },
-    {
-      "name": "pdflatex -> bibtex -> pdflatex*2",
-      "tools": [
-        "pdflatex",
-        "bibtex",
-        "pdflatex",
-        "pdflatex"
-      ]
-    }
-  ],
-  "latex-workshop.latex.tools": [
-    {
-      "name": "latexmk",
-      "command": "latexmk",
-      "args": [
-        "-synctex=1",
-        "-interaction=nonstopmode",
-        "-file-line-error",
-        "-pdf",
-        "%DOC%"
-      ]
-    },
-    {
-      "name": "xelatex",
-      "command": "xelatex",
-      "args": [
-        "-synctex=1",
-        "-interaction=nonstopmode",
-        "-file-line-error",
-        "%DOC%"
-      ]
-    },
-    {
-      "name": "pdflatex",
-      "command": "pdflatex",
-      "args": [
-        "-synctex=1",
-        "-interaction=nonstopmode",
-        "-file-line-error",
-        "%DOC%"
-      ]
-    },
-    {
-      "name": "bibtex",
-      "command": "bibtex",
-      "args": [
-        "%DOCFILE%"
-      ]
-    }
-  ],
-  "latex-workshop.view.pdf.viewer": "tab",
-  "latex-workshop.latex.clean.fileTypes": [
-    "*.aux",
-    "*.bbl",
-    "*.blg",
-    "*.idx",
-    "*.ind",
-    "*.lof",
-    "*.lot",
-    "*.out",
-    "*.toc",
-    "*.acn",
-    "*.acr",
-    "*.alg",
-    "*.glg",
-    "*.glo",
-    "*.gls",
-    "*.ist",
-    "*.fls",
-    "*.log",
-    "*.fdb_latexmk"
-  ],
   "cmake.configureOnOpen": true,
   "remote.SSH.remotePlatform": {
     "192.168.1.111": "linux",
     "192.168.43.231": "linux",
-    "myServer": "linux"
+    "myServer": "linux",
+    "106.12.133.3": "linux"
   },
   "doxygen_runner.configuration_filenames": [
     "Doxyfile",
@@ -128,13 +82,12 @@
     "**/.factorypath": true
   },
   "java.codeGeneration.generateComments": true,
-  "diffEditor.ignoreTrimWhitespace": false,
   "java.semanticHighlighting.enabled": true,
   "[css]": {
     "editor.defaultFormatter": "Wscats.qf"
   },
   "[javascript]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features"
+    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
   },
   "[html]": {
     "editor.defaultFormatter": "Wscats.qf"
@@ -159,16 +112,13 @@
   },
   "scss.completion.triggerPropertyValueCompletion": true,
   "gitlens.views.branches.branches.layout": "list",
-  "workbench.colorTheme": "Atom One Light",
   "[vue]": {
     "gitlens.codeLens.scopes": [
       "document"
     ],
-    "editor.defaultFormatter": "octref.vetur"
+    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
   },
   "vsicons.presets.hideExplorerArrows": true,
-  "leetcode.workspaceFolder": "c:\\Users\\htwoo\\Desktop",
-  "leetcode.defaultLanguage": "cpp",
   "errorLens.delay": 3000,
   "errorLens.enabledDiagnosticLevels": [
     "error",
@@ -936,7 +886,7 @@
           "key": "x",
           "name": "Show extensions",
           "type": "command",
-          "command": "workbench.view.extensions"
+          "command": "workbench.view.extensions",
         },
         {
           "key": "p",
@@ -1032,6 +982,31 @@
       "name": "Split Vertical",
       "type": "command",
       "command": "workbench.action.splitEditor"
+    },
+    {
+      "key": "z",
+      "name": "zip",
+      "type": "bindings",
+      "bindings": [
+        {
+          "key": "c",
+          "name": "fold",
+          "type": "command",
+          "command": "editor.fold"
+        },
+        {
+          "key": "1",
+          "name": "fold level1",
+          "type": "command",
+          "command": "editor.foldLevel1"
+        },
+        {
+          "key": "u",
+          "name": "unfold",
+          "type": "command",
+          "command": "editor.unfold"
+        }
+      ]
     },
     {
       "key": "w",
@@ -1138,7 +1113,7 @@
       ]
     },
     {
-      "key": "z",
+      "key": "Z",
       "name": "Toggle zen mode",
       "type": "command",
       "command": "workbench.action.toggleZenMode"
@@ -1150,6 +1125,37 @@
     "fsharp"
   ],
   "settingsSync.ignoredExtensions": [
-    "streetsidesoftware.code-spell-checker"
+    "streetsidesoftware.code-spell-checker",
+    "dennisvash.summer-time"
   ],
+  "cSpell.userWords": [
+    "varphi"
+  ],
+  "[markdown]": {
+    "editor.wordWrap": "on",
+    "editor.quickSuggestions": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+  },
+  "diffEditor.ignoreTrimWhitespace": false,
+  "[jsonc]": {
+    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+  },
+  "workbench.colorTheme": "Quiet Light",
+  "workbench.editor.enablePreview": false,
+  "files.autoSaveDelay": 5000,
+  "tabnine.disable_file_regex": [
+    // "*.vue"
+  ],
+  "tabnine.disable_line_regex": [],
+  "tabnine.maxNumberOfResults": 2,
+  "tabnine.requestTimeout": 1000,
+  "tabnine.charLimit": 50000,
+  "gitlens.mode.active": "zen",
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.minimap.maxColumn": 50,
+  "leetcode.endpoint": "leetcode-cn",
+  "leetcode.hint.configWebviewMarkdown": false,
 }

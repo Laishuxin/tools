@@ -183,5 +183,23 @@
         "key": "ctrl+alt+v",
         "command": "-extension.pasteImage",
         "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+d",
+        "command": "editor.action.addSelectionToNextFindMatch",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+d",
+        "command": "-editor.action.addSelectionToNextFindMatch",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+oem_1",
+        "command": "findJump.activate"
+    },
+    {
+        "key": "ctrl+;",
+        "command": "findThenJump.initiate"
     }
 ]
