@@ -12,4 +12,16 @@
 	// 	],
 	// 	"description": "Log output to console"
 	// }
+	"table center": {
+		"prefix": "tcenter",
+		"body": ":------:|"
+	},
+	"table left": {
+		"prefix": "tleft",
+		"body": ":------|"
+	},
+	"table right": {
+		"prefix": "tright",
+		"body": "------:|"
+	},
 }

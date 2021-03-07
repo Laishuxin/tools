@@ -112,3 +112,7 @@ console.log("server start at 127.0.0.1:9999");
 4. 路由中间件
 
    [koa-router](https://www.npmjs.com/package/koa-session)
+
+5. 跨域请求
+
+   @koa/cors

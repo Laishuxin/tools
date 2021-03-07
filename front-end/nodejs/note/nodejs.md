@@ -6,8 +6,13 @@
 
 1. app-root-path
    用于获取当前项目的 root path
+   
 2. cross-env
    用于跨平台。例如：在 node's scripts 中定义变量。
+   
+3. chalk
+
+   node环境下，颜色print
 
 ### 必备调试插件
 

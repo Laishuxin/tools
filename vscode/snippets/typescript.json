@@ -12,12 +12,20 @@
 	// 	],
 	// 	"description": "Log output to console"
 	// }
-	"delimeter comment": {
-		"prefix": "split line",
+	"splitLineImport": {
+		"prefix": "splitLineImport",
 		"body": [
 			"// import $1",
 			"$0",
 			"// end import $1"
 		]
-	}
+	},
+	"splitLine": {
+		"prefix": "splitLine",
+		"body": [
+			"// ===================== $1 ===================== ",
+			"$0",
+			"// ===================== end $1 ===================== "
+		]
+	},
 }
