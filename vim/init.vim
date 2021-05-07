@@ -43,37 +43,48 @@ nnoremap J 5j
 nnoremap L 5l
 map S :w<CR>
 map Q :q<CR>
+
+" --------------------------------
+" key map like vscode
+" no hightline
 map <leader>n :nohlsearch<CR>
+
+" explorer
 map <c-e> :CocCommand explorer<CR>
-nnoremap <silent> <C-f> :Files<CR>
-" ---------------------------------
-" - screen split key map
-" control window + control directions
-" ---------------------------------
-map <c-w><c-j> :set nosplitright<CR>:vsplit<CR>
-map <c-w><c-l> :set splitright<CR>:vsplit<CR>
-map <c-w><c-i> :set nosplitbelow<CR>:split<CR>
-map <c-w><c-k> :set splitbelow<CR>:split<CR>
+map <leader>e :CocCommand explorer<CR>
+
+" search files
+map <leader>sf :Files<CR>
+" search text
+map <leader>st :Rg<CR>
+" search marks
+nnoremap <leader>sm :Marks<CR>
+" search buffers
+nnoremap <leader>sb :Buffers<CR>
+" split
+map <leader>h :set splitbelow<CR>:split<CR>
+map <leader>v :set nosplitright<CR>:vsplit<CR>
+
+map <c-s><c-h> :set nosplitright<CR>:vsplit<CR>
+map <c-s><c-l> :set splitright<CR>:vsplit<CR>
+map <c-s><c-j> :set nosplitbelow<CR>:split<CR>
+map <c-s><c-k> :set splitbelow<CR>:split<CR>
 map <leader><up> :res +5<CR>
 map <leader><down> :res -5<CR>
 map <leader><left> :vertical resize-5<CR>
 map <leader><right> :vertical resize+5<CR>
-map <leader>j <C-w>j
-map <leader>k <C-w>k
-map <leader>h <C-w>h
-map <leader>l <C-w>l
-" ---------------------------------
-" - table key map
-" control t + control directions
-" ---------------------------------
-map <c-t><c-n> :tabnext<CR>
-map <c-t><c-p> :tabprevious<CR>
-" create a new table
-map <c-t><c-l> :tabedit<CR> 
-map <c-t>n :tabnext<CR>
-map <c-t>p :tabprevious<CR>
-" create a new table
-map <c-t>l :tabedit<CR> 
+map <c-j> <C-w>j
+map <c-k> <C-w>k
+map <c-h> <C-w>h
+map <c-l> <C-w>l
+" buffer
+map <leader>bn :tabnext<CR>
+map <leader>bp :tabprevious<CR>
+map <leader>be :tabedit<CR>
+" close other editor
+map <leader>bm :tabonly<CR>
+
+
 " =================================
 " shortcut
 " 1.<leader> format file; delete all extra spaces at the end of the line in
@@ -199,19 +210,21 @@ inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()
 
 " Use `[g` and `]g` to navigate diagnostics
 " Use `:CocDiagnostics` to get all diagnostics of current buffer in location list.
-nmap <silent> <leader>- <Plug>(coc-diagnostic-prev)
-nmap <silent> <leader>= <Plug>(coc-diagnostic-next)
+" lsp prev erorr
+nmap <silent> <leader>lp <Plug>(coc-diagnostic-prev)
+" lsp next erorr
+nmap <silent> <leader>nn <Plug>(coc-diagnostic-next)
 
 " GoTo code navigation.
 " leader goto x
-nmap <silent> <leader>gd <Plug>(coc-definition)
-nmap <silent> <leader>gy <Plug>(coc-type-definition)
-nmap <silent> <leader>gi <Plug>(coc-implementation)
-nmap <silent> <leader>gr <Plug>(coc-references)
+nmap <silent> <leader>ld <Plug>(coc-definition)
+nmap <silent> <leader>lt <Plug>(coc-type-definition)
+nmap <silent> <leader>li <Plug>(coc-implementation)
+nmap <silent> <leader>lr <Plug>(coc-references)
 
 " Use K to show documentation in preview window.
 " leader goto document
-nnoremap <silent> <leader>gD :call <SID>show_documentation()<CR>
+nnoremap <silent> <leader>lD :call <SID>show_documentation()<CR>
 
 function! s:show_documentation()
   if (index(['vim','help'], &filetype) >= 0)
@@ -228,12 +241,12 @@ autocmd CursorHold * silent call CocActionAsync('highlight')
 
 " Symbol renaming.
 " leader change name
-nmap <leader>cn <Plug>(coc-rename)
+nmap <leader>lr <Plug>(coc-rename)
 
 " Formatting selected code.
 " leader format file
-xmap <leader>ff <Plug>(coc-format-selected)
-nmap <leader>ff <Plug>(coc-format-selected)
+"xmap <leader>ff <Plug>(coc-format-selected)
+"nmap <leader>ff <Plug>(coc-format-selected)
 
 augroup mygroup
   autocmd!
@@ -251,7 +264,7 @@ nmap <leader>a  <Plug>(coc-codeaction-selected)
 " Remap keys for applying codeAction to the current buffer.
 nmap <leader>ac  <Plug>(coc-codeaction)
 " Apply AutoFix to problem on the current line.
-nmap <leader>qf  <Plug>(coc-fix-current)
+nmap <leader>la  <Plug>(coc-fix-current)
 
 " Map function and class text objects
 " NOTE: Requires 'textDocument.documentSymbol' support from the language server.
@@ -370,9 +383,3 @@ let g:airline_symbols.branch = '⎇'
 " 是否打开tabline
 let g:airline#extensions#tabline#enabled = 1 " 打开后，tabline和tmuxline都可以得到增强
 
-" ************************************
-" * fzf
-" ***********************************
-nnoremap <leader>ff :Rg<CR>
-nnoremap <leader>f` :Marks<CR>
-nnoremap <leader>fb :Buffers<CR>
